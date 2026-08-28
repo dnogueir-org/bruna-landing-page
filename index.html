@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bruna Nogueira | Advogada – OAB/MG 233.848</title>
+  <meta name="description" content="Advogada especialista em Direito Administrativo, Direito do Consumidor e Direito Civil. OAB/MG 233.848." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream:  '#FAF7F4',
+            warm:   '#F2EBE5',
+            blush:  '#E8D5CC',
+            rose:   '#C4A49A',
+            taupe:  '#8A7060',
+            bark:   '#5C4038',
+            ink:    '#2D2425',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans:  ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    html { font-family: 'Inter', system-ui, sans-serif; }
+    h1, h2, h3 { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+    /* Thin horizontal rule decorator */
+    .section-rule::before {
+      content: '';
+      display: block;
+      width: 3rem;
+      height: 1px;
+      background: #C4A49A;
+      margin: 0 auto 1.25rem;
+    }
+
+    /* Smooth fade-in on scroll */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Nav link hover underline */
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -2px;
+      width: 0; height: 1px;
+      background: #C4A49A;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after { width: 100%; }
+
+    /* Card hover lift */
+    .area-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .area-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(140, 100, 80, 0.12);
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-ink antialiased">
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header id="top" class="fixed top-0 inset-x-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-blush">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo / Name -->
+      <a href="#top" class="flex flex-col leading-tight">
+        <span class="font-serif text-xl font-semibold tracking-wide text-ink">Bruna Nogueira</span>
+        <span class="font-sans text-[10px] font-medium tracking-widest text-taupe uppercase">Advogada · OAB/MG 233.848</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-8 font-sans text-sm font-medium text-taupe">
+        <a href="#sobre"  class="nav-link hover:text-ink transition-colors">Sobre</a>
+        <a href="#areas"  class="nav-link hover:text-ink transition-colors">Áreas</a>
+        <a href="#contato" class="nav-link hover:text-ink transition-colors">Contato</a>
+        <a href="https://wa.me/5567981023008?text=Olá%2C%20Dra.%20Bruna%21%20Gostaria%20de%20agendar%20uma%20consulta."
+           target="_blank" rel="noopener"
+           class="ml-2 px-5 py-2 rounded-full bg-rose text-white text-sm font-medium hover:bg-taupe transition-colors">
+          Fale Conosco
+        </a>
+      </nav>
+
+      <!-- Mobile hamburger (pure CSS toggle) -->
+      <label for="mobile-menu-toggle" class="md:hidden cursor-pointer text-taupe" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </label>
+    </div>
+
+    <!-- Mobile nav (no JS) -->
+    <input type="checkbox" id="mobile-menu-toggle" class="hidden peer" />
+    <nav class="md:hidden max-h-0 overflow-hidden peer-checked:max-h-64 transition-all duration-300 bg-cream border-t border-blush">
+      <div class="flex flex-col px-6 py-4 gap-4 font-sans text-sm font-medium text-taupe">
+        <a href="#sobre"   class="hover:text-rose transition-colors">Sobre</a>
+        <a href="#areas"   class="hover:text-rose transition-colors">Áreas de Atuação</a>
+        <a href="#contato" class="hover:text-rose transition-colors">Contato</a>
+        <a href="https://wa.me/5567981023008?text=Olá%2C%20Dra.%20Bruna%21%20Gostaria%20de%20agendar%20uma%20consulta."
+           target="_blank" rel="noopener"
+           class="mt-1 text-center px-5 py-2 rounded-full bg-rose text-white hover:bg-taupe transition-colors">
+          Fale Conosco
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-20 overflow-hidden">
+
+    <!-- Subtle background shape -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-blush/30 blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-3xl fade-in">
+      <!-- Pre-title -->
+      <p class="font-sans text-xs font-semibold tracking-[0.25em] uppercase text-rose mb-6">
+        Advocacia &amp; Assessoria Jurídica
+      </p>
+
+      <!-- Main heading -->
+      <h1 class="font-serif text-5xl md:text-7xl font-light leading-tight text-ink mb-4">
+        Bruna<br />
+        <span class="italic font-semibold text-taupe">Nogueira</span>
+      </h1>
+
+      <!-- OAB badge -->
+      <p class="font-sans text-xs tracking-widest uppercase text-rose/80 mb-8">
+        OAB/MG 233.848
+      </p>
+
+      <!-- Tagline -->
+      <p class="font-sans text-base md:text-lg font-light text-taupe max-w-xl mx-auto leading-relaxed mb-10">
+        Comprometida com a defesa dos seus direitos. Atuação estratégica e atendimento humanizado em Direito Administrativo, Direito do Consumidor e Direito Civil.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/5567981023008?text=Olá%2C%20Dra.%20Bruna%21%20Gostaria%20de%20agendar%20uma%20consulta."
+           target="_blank" rel="noopener"
+           class="flex items-center gap-2 px-8 py-3.5 rounded-full bg-rose text-white font-sans text-sm font-medium hover:bg-taupe transition-colors shadow-sm">
+          <!-- WhatsApp icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-white" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.122 1.52 5.856L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.032-1.386l-.36-.214-3.76.879.928-3.67-.234-.374A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+          </svg>
+          Agendar Consulta
+        </a>
+        <a href="#sobre"
+           class="px-8 py-3.5 rounded-full border border-rose text-rose font-sans text-sm font-medium hover:bg-blush/50 transition-colors">
+          Saiba Mais
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+      <span class="font-sans text-[10px] tracking-widest uppercase text-taupe">Rolar</span>
+      <div class="w-px h-10 bg-gradient-to-b from-rose to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SOBRE
+  ═══════════════════════════════════════════ -->
+  <section id="sobre" class="bg-warm py-24 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Decorative block -->
+      <div class="fade-in flex justify-center md:justify-end order-2 md:order-1">
+        <div class="relative w-72 h-80 md:w-80 md:h-96">
+          <!-- Layered rectangles for an elegant effect -->
+          <div class="absolute top-0 left-0 w-full h-full rounded-2xl bg-blush/60"></div>
+          <div class="absolute top-4 left-4 w-full h-full rounded-2xl border border-rose/30"></div>
+          <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 p-8 text-center">
+            <span class="font-serif text-7xl text-rose/30 leading-none select-none">"</span>
+            <p class="font-serif text-xl italic text-bark leading-relaxed">
+              A advocacia é o exercício de uma missão constitucional indispensável à administração da justiça.
+            </p>
+            <span class="font-sans text-xs text-taupe tracking-widest uppercase">Art. 133, CF/88</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="fade-in order-1 md:order-2">
+        <p class="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-rose mb-4">Sobre</p>
+        <h2 class="font-serif text-4xl md:text-5xl font-light text-ink mb-6 leading-tight">
+          Advocacia com <br /><span class="italic">dedicação e ética</span>
+        </h2>
+        <div class="space-y-4 font-sans text-sm text-taupe leading-relaxed font-light">
+          <p>
+            Bruna Nogueira é advogada inscrita na Ordem dos Advogados do Brasil, seccional Minas Gerais, sob o número <strong class="text-bark font-medium">OAB/MG 233.848</strong>. Com formação sólida e compromisso com os princípios éticos da profissão, atua na defesa dos direitos de pessoas físicas com atenção, clareza e responsabilidade.
+          </p>
+          <p>
+            O atendimento é personalizado: cada caso é analisado de forma individual, com escuta ativa e orientação transparente sobre as possibilidades jurídicas disponíveis. A missão é traduzir a linguagem do Direito em soluções práticas para a vida de cada cliente.
+          </p>
+          <p>
+            Atua nas áreas de Direito Administrativo, Direito do Consumidor e Direito Civil, oferecendo consultoria preventiva e representação judicial e extrajudicial.
+          </p>
+        </div>
+
+        <!-- Stats row -->
+        <div class="mt-10 flex gap-10">
+          <div>
+            <p class="font-serif text-4xl font-semibold text-rose">3</p>
+            <p class="font-sans text-xs text-taupe mt-1 tracking-wide">Áreas de atuação</p>
+          </div>
+          <div class="border-l border-blush pl-10">
+            <p class="font-serif text-4xl font-semibold text-rose">OAB</p>
+            <p class="font-sans text-xs text-taupe mt-1 tracking-wide">Regularmente inscrita</p>
+          </div>
+          <div class="border-l border-blush pl-10">
+            <p class="font-serif text-4xl font-semibold text-rose">MG</p>
+            <p class="font-sans text-xs text-taupe mt-1 tracking-wide">Seccional Minas Gerais</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ÁREAS DE ATUAÇÃO
+  ═══════════════════════════════════════════ -->
+  <section id="areas" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Section header -->
+      <div class="text-center mb-16 fade-in section-rule">
+        <p class="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-rose mb-3">Especialidades</p>
+        <h2 class="font-serif text-4xl md:text-5xl font-light text-ink">
+          Áreas de <span class="italic">Atuação</span>
+        </h2>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Card 1 – Direito Administrativo -->
+        <article class="area-card fade-in bg-warm rounded-2xl p-8 border border-blush/50">
+          <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center mb-6">
+            <!-- Icon: building/government -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10h1v11H4M19 10h1v11h-1M9 10h1v11H9M14 10h1v11h-1"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold text-bark mb-3">Direito Administrativo</h3>
+          <p class="font-sans text-sm text-taupe leading-relaxed font-light mb-5">
+            Rege as relações entre o cidadão e o Estado, assegurando os princípios constitucionais da legalidade, impessoalidade, moralidade, publicidade e eficiência, previstos no art. 37 da Constituição Federal de 1988.
+          </p>
+          <ul class="space-y-2 font-sans text-sm text-taupe font-light">
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Processos administrativos e recursos
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Direito dos servidores públicos
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Concursos públicos e PADs
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Licitações e contratos administrativos
+            </li>
+          </ul>
+          <div class="mt-6 pt-6 border-t border-blush/60">
+            <p class="font-sans text-[11px] text-taupe/60 leading-relaxed italic">
+              Fundamento: CF/88, art. 37; Lei 9.784/1999; Lei 8.112/1990.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2 – Direito do Consumidor -->
+        <article class="area-card fade-in bg-warm rounded-2xl p-8 border border-blush/50" style="transition-delay: 0.1s">
+          <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center mb-6">
+            <!-- Icon: shield -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 10c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold text-bark mb-3">Direito do Consumidor</h3>
+          <p class="font-sans text-sm text-taupe leading-relaxed font-light mb-5">
+            O Código de Defesa do Consumidor (Lei 8.078/1990) estabelece normas de proteção nas relações de consumo, reconhecendo a vulnerabilidade do consumidor e garantindo seus direitos básicos, como a proteção contra práticas abusivas e publicidade enganosa.
+          </p>
+          <ul class="space-y-2 font-sans text-sm text-taupe font-light">
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Cobranças indevidas e restituição
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Vícios em produtos e serviços
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Negativação indevida (SPC/SERASA)
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Danos morais e materiais
+            </li>
+          </ul>
+          <div class="mt-6 pt-6 border-t border-blush/60">
+            <p class="font-sans text-[11px] text-taupe/60 leading-relaxed italic">
+              Fundamento: Lei 8.078/1990 – Código de Defesa do Consumidor.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3 – Direito Civil -->
+        <article class="area-card fade-in bg-warm rounded-2xl p-8 border border-blush/50" style="transition-delay: 0.2s">
+          <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center mb-6">
+            <!-- Icon: document/balance -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.589-1.202L18.75 4.97zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.589-1.202L5.25 4.97z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold text-bark mb-3">Direito Civil</h3>
+          <p class="font-sans text-sm text-taupe leading-relaxed font-light mb-5">
+            O Código Civil (Lei 10.406/2002) disciplina as relações entre particulares, compreendendo obrigações, contratos, responsabilidade civil, família e sucessões — pilares fundamentais da vida em sociedade.
+          </p>
+          <ul class="space-y-2 font-sans text-sm text-taupe font-light">
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Contratos e assessoria preventiva
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Responsabilidade civil e indenizações
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Família: divórcio, guarda e alimentos
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose mt-0.5">—</span>
+              Inventário e planejamento sucessório
+            </li>
+          </ul>
+          <div class="mt-6 pt-6 border-t border-blush/60">
+            <p class="font-sans text-[11px] text-taupe/60 leading-relaxed italic">
+              Fundamento: Lei 10.406/2002 – Código Civil Brasileiro.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DIFERENCIAIS
+  ═══════════════════════════════════════════ -->
+  <section class="bg-warm py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14 fade-in section-rule">
+        <h2 class="font-serif text-4xl font-light text-ink">
+          Por que nos <span class="italic">escolher?</span>
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+
+        <div class="fade-in">
+          <div class="w-14 h-14 rounded-full bg-blush mx-auto flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-bark mb-2">Atendimento Humanizado</h3>
+          <p class="font-sans text-sm text-taupe font-light leading-relaxed">
+            Cada cliente é ouvido com atenção e respeito. Acreditamos que clareza e empatia são tão importantes quanto o conhecimento técnico-jurídico.
+          </p>
+        </div>
+
+        <div class="fade-in" style="transition-delay: 0.1s">
+          <div class="w-14 h-14 rounded-full bg-blush mx-auto flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-bark mb-2">Fundamentação Sólida</h3>
+          <p class="font-sans text-sm text-taupe font-light leading-relaxed">
+            Estratégias jurídicas construídas sobre a legislação e a jurisprudência vigentes, com rigor técnico e atualização constante.
+          </p>
+        </div>
+
+        <div class="fade-in" style="transition-delay: 0.2s">
+          <div class="w-14 h-14 rounded-full bg-blush mx-auto flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-bark mb-2">Comunicação Transparente</h3>
+          <p class="font-sans text-sm text-taupe font-light leading-relaxed">
+            Você é informado em cada etapa do processo. Nenhuma decisão é tomada sem o seu conhecimento e consentimento.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTATO
+  ═══════════════════════════════════════════ -->
+  <section id="contato" class="py-24 px-6">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <p class="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-rose mb-4">Contato</p>
+      <h2 class="font-serif text-4xl md:text-5xl font-light text-ink mb-5">
+        Vamos <span class="italic">conversar?</span>
+      </h2>
+      <p class="font-sans text-sm text-taupe font-light leading-relaxed max-w-lg mx-auto mb-14">
+        Entre em contato para agendar uma consulta ou tirar dúvidas. O primeiro passo começa com uma conversa.
+      </p>
+
+      <!-- Contact cards -->
+      <div class="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5567981023008?text=Olá%2C%20Dra.%20Bruna%21%20Gostaria%20de%20agendar%20uma%20consulta."
+           target="_blank" rel="noopener"
+           class="group flex items-center gap-5 p-6 bg-warm rounded-2xl border border-blush hover:border-rose transition-colors text-left">
+          <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center shrink-0 group-hover:bg-rose/20 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-taupe" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.122 1.52 5.856L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.032-1.386l-.36-.214-3.76.879.928-3.67-.234-.374A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="font-sans text-[10px] font-semibold tracking-widest uppercase text-rose mb-1">WhatsApp</p>
+            <p class="font-serif text-lg font-medium text-bark">(67) 98102-3008</p>
+          </div>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:Nogueirabruna.adv@gmail.com"
+           class="group flex items-center gap-5 p-6 bg-warm rounded-2xl border border-blush hover:border-rose transition-colors text-left">
+          <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center shrink-0 group-hover:bg-rose/20 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+            </svg>
+          </div>
+          <div>
+            <p class="font-sans text-[10px] font-semibold tracking-widest uppercase text-rose mb-1">E-mail</p>
+            <p class="font-serif text-base font-medium text-bark break-all">Nogueirabruna.adv@gmail.com</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Big CTA -->
+      <a href="https://wa.me/5567981023008?text=Olá%2C%20Dra.%20Bruna%21%20Gostaria%20de%20agendar%20uma%20consulta."
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-rose text-white font-sans text-sm font-medium hover:bg-taupe transition-colors shadow-md">
+        Agendar Consulta pelo WhatsApp
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="bg-ink text-cream/60 py-12 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+
+      <div class="text-center md:text-left">
+        <p class="font-serif text-2xl text-cream font-light">Bruna Nogueira</p>
+        <p class="font-sans text-xs tracking-widest uppercase text-rose mt-1">Advogada · OAB/MG 233.848</p>
+      </div>
+
+      <div class="text-center font-sans text-xs leading-relaxed">
+        <p><a href="tel:+5567981023008" class="hover:text-cream transition-colors">(67) 98102-3008</a></p>
+        <p><a href="mailto:Nogueirabruna.adv@gmail.com" class="hover:text-cream transition-colors">Nogueirabruna.adv@gmail.com</a></p>
+      </div>
+
+      <div class="text-center md:text-right font-sans text-xs">
+        <p>© <span id="year"></span> Bruna Nogueira Advocacia.</p>
+        <p class="mt-1 text-cream/40">Todos os direitos reservados.</p>
+      </div>
+    </div>
+
+    <!-- OAB disclaimer -->
+    <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-cream/10">
+      <p class="font-sans text-[10px] text-cream/30 text-center leading-relaxed max-w-2xl mx-auto">
+        Este website tem caráter exclusivamente informativo e não constitui consultoria jurídica. A publicidade da advocacia é regida pelo Provimento n.º 94/2000 do Conselho Federal da OAB e pelo Código de Ética e Disciplina da OAB.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════ -->
+  <script>
+    // Dynamic year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobile-menu-toggle').checked = false;
+      });
+    });
+  </script>
+</body>
+</html>
