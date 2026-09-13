@@ -105,8 +105,7 @@
         <a href="#sobre"  class="nav-link hover:text-ink transition-colors">Sobre</a>
         <a href="#areas"  class="nav-link hover:text-ink transition-colors">Áreas</a>
         <a href="#contato" class="nav-link hover:text-ink transition-colors">Contato</a>
-        <a href="https://wa.me/5567981023008?text=Olá%2C%20Dra.%20Bruna%21%20Gostaria%20de%20agendar%20uma%20consulta."
-           target="_blank" rel="noopener"
+        <a href="#contato"
            class="ml-2 px-5 py-2 rounded-full bg-rose text-white text-sm font-medium hover:bg-taupe transition-colors">
           Fale Conosco
         </a>
@@ -127,8 +126,7 @@
         <a href="#sobre"   class="hover:text-rose transition-colors">Sobre</a>
         <a href="#areas"   class="hover:text-rose transition-colors">Áreas de Atuação</a>
         <a href="#contato" class="hover:text-rose transition-colors">Contato</a>
-        <a href="https://wa.me/5567981023008?text=Olá%2C%20Dra.%20Bruna%21%20Gostaria%20de%20agendar%20uma%20consulta."
-           target="_blank" rel="noopener"
+        <a href="#contato"
            class="mt-1 text-center px-5 py-2 rounded-full bg-rose text-white hover:bg-taupe transition-colors">
           Fale Conosco
         </a>
@@ -139,51 +137,59 @@
   <!-- ═══════════════════════════════════════════
        HERO
   ═══════════════════════════════════════════ -->
-  <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-20 overflow-hidden">
+  <section class="relative min-h-screen flex items-center px-6 pt-24 pb-20 overflow-hidden">
 
     <!-- Subtle background shape -->
     <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-blush/30 blur-3xl"></div>
+      <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-blush/30 blur-3xl"></div>
     </div>
 
-    <div class="relative max-w-3xl fade-in">
-      <!-- Pre-title -->
-      <p class="font-sans text-xs font-semibold tracking-[0.25em] uppercase text-rose mb-6">
-        Advocacia &amp; Assessoria Jurídica
-      </p>
+    <div class="relative max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-      <!-- Main heading -->
-      <h1 class="font-serif text-5xl md:text-7xl font-light leading-tight text-ink mb-4">
-        Bruna<br />
-        <span class="italic font-semibold text-taupe">Nogueira</span>
-      </h1>
+      <!-- Photo (left) -->
+      <div class="fade-in flex justify-center md:justify-center">
+        <div class="relative">
+          <img src="bruna.jpg" alt="Dra. Bruna Nogueira"
+               class="relative w-72 h-96 md:w-80 md:h-[480px] object-cover object-top rounded-2xl shadow-lg z-10" />
+          <!-- Decorative offset border -->
+          <div class="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border border-rose/30"></div>
+        </div>
+      </div>
 
-      <!-- OAB badge -->
-      <p class="font-sans text-xs tracking-widest uppercase text-rose/80 mb-8">
-        OAB/MG 233.848
-      </p>
+      <!-- Text content (right) -->
+      <div class="fade-in">
+        <!-- Pre-title -->
+        <p class="font-sans text-xs font-semibold tracking-[0.25em] uppercase text-rose mb-6">
+          Advocacia &amp; Assessoria Jurídica
+        </p>
 
-      <!-- Tagline -->
-      <p class="font-sans text-base md:text-lg font-light text-taupe max-w-xl mx-auto leading-relaxed mb-10">
-        Comprometida com a defesa dos seus direitos. Atuação estratégica e atendimento humanizado em Direito Administrativo, Direito do Consumidor e Direito Civil.
-      </p>
+        <!-- Main heading – uniform -->
+        <h1 class="font-serif text-5xl md:text-7xl font-light leading-tight text-ink mb-4">
+          Bruna<br />
+          Nogueira
+        </h1>
 
-      <!-- CTAs -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="https://wa.me/5567981023008?text=Olá%2C%20Dra.%20Bruna%21%20Gostaria%20de%20agendar%20uma%20consulta."
-           target="_blank" rel="noopener"
-           class="flex items-center gap-2 px-8 py-3.5 rounded-full bg-rose text-white font-sans text-sm font-medium hover:bg-taupe transition-colors shadow-sm">
-          <!-- WhatsApp icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-white" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.122 1.52 5.856L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.032-1.386l-.36-.214-3.76.879.928-3.67-.234-.374A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-          </svg>
-          Agendar Consulta
-        </a>
-        <a href="#sobre"
-           class="px-8 py-3.5 rounded-full border border-rose text-rose font-sans text-sm font-medium hover:bg-blush/50 transition-colors">
-          Saiba Mais
-        </a>
+        <!-- OAB badge -->
+        <p class="font-sans text-xs tracking-widest uppercase text-rose/80 mb-8">
+          OAB/MG 233.848
+        </p>
+
+        <!-- Tagline -->
+        <p class="font-sans text-base md:text-lg font-light text-taupe max-w-xl leading-relaxed mb-10">
+          Comprometida com a defesa dos seus direitos. Atuação estratégica e atendimento humanizado em Direito Administrativo, Direito do Consumidor e Direito Civil.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row items-start gap-4">
+          <a href="#contato"
+             class="flex items-center gap-2 px-8 py-3.5 rounded-full bg-rose text-white font-sans text-sm font-medium hover:bg-taupe transition-colors shadow-sm">
+            Agendar Consulta
+          </a>
+          <a href="#sobre"
+             class="px-8 py-3.5 rounded-full border border-rose text-rose font-sans text-sm font-medium hover:bg-blush/50 transition-colors">
+            Saiba Mais
+          </a>
+        </div>
       </div>
     </div>
 
@@ -200,54 +206,39 @@
   <section id="sobre" class="bg-warm py-24 px-6">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-      <!-- Decorative block -->
-      <div class="fade-in flex justify-center md:justify-end order-2 md:order-1">
-        <div class="relative w-72 h-80 md:w-80 md:h-96">
-          <!-- Layered rectangles for an elegant effect -->
-          <div class="absolute top-0 left-0 w-full h-full rounded-2xl bg-blush/60"></div>
-          <div class="absolute top-4 left-4 w-full h-full rounded-2xl border border-rose/30"></div>
-          <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 p-8 text-center">
-            <span class="font-serif text-7xl text-rose/30 leading-none select-none">"</span>
-            <p class="font-serif text-xl italic text-bark leading-relaxed">
-              A advocacia é o exercício de uma missão constitucional indispensável à administração da justiça.
-            </p>
-            <span class="font-sans text-xs text-taupe tracking-widest uppercase">Art. 133, CF/88</span>
-          </div>
+      <!-- Quote card (left) -->
+      <div class="fade-in order-2 md:order-1">
+        <div class="relative bg-blush/40 rounded-2xl border border-rose/20 p-10 flex flex-col items-center justify-center min-h-64 text-center gap-5">
+          <div class="absolute top-4 right-4 w-full h-full rounded-2xl border border-rose/15 -z-10"></div>
+          <span class="font-serif text-8xl text-rose/25 leading-none select-none -mb-4">"</span>
+          <h2 class="font-serif text-3xl md:text-4xl font-light text-bark leading-snug italic">
+            Advocacia com dedicação e ética
+          </h2>
+          <span class="font-serif text-8xl text-rose/25 leading-none select-none rotate-180 -mt-4">"</span>
+          <div class="w-8 h-px bg-rose/40"></div>
+          <p class="font-sans text-[11px] tracking-widest uppercase text-rose/70">Bruna Nogueira</p>
         </div>
       </div>
 
-      <!-- Text -->
+      <!-- Bio text (right) -->
       <div class="fade-in order-1 md:order-2">
-        <p class="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-rose mb-4">Sobre</p>
-        <h2 class="font-serif text-4xl md:text-5xl font-light text-ink mb-6 leading-tight">
-          Advocacia com <br /><span class="italic">dedicação e ética</span>
-        </h2>
+        <p class="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-rose mb-6">Sobre</p>
         <div class="space-y-4 font-sans text-sm text-taupe leading-relaxed font-light">
           <p>
-            Bruna Nogueira é advogada inscrita na Ordem dos Advogados do Brasil, seccional Minas Gerais, sob o número <strong class="text-bark font-medium">OAB/MG 233.848</strong>. Com formação sólida e compromisso com os princípios éticos da profissão, atua na defesa dos direitos de pessoas físicas com atenção, clareza e responsabilidade.
+            Formada em Direito pela <strong class="text-bark font-medium">Universidade Federal da Grande Dourados – UFGD</strong>, possui pós-graduação em <strong class="text-bark font-medium">Compliance Médico e Jurídico</strong> pelo Grupo Minas, e em <strong class="text-bark font-medium">Direito da Medicina</strong> pela Universidade de Coimbra, Portugal.
           </p>
           <p>
-            O atendimento é personalizado: cada caso é analisado de forma individual, com escuta ativa e orientação transparente sobre as possibilidades jurídicas disponíveis. A missão é traduzir a linguagem do Direito em soluções práticas para a vida de cada cliente.
+            Tem sólida atuação em Direito Médico e da Saúde, Direito Administrativo, Direito Civil e do Consumidor.
           </p>
           <p>
-            Atua nas áreas de Direito Administrativo, Direito do Consumidor e Direito Civil, oferecendo consultoria preventiva e representação judicial e extrajudicial.
+            A sua prática está fundamentada em uma conduta ética e relacionamento transparente com o cliente, além da busca constante pela atualização e conhecimento.
           </p>
-        </div>
-
-        <!-- Stats row -->
-        <div class="mt-10 flex gap-10">
-          <div>
-            <p class="font-serif text-4xl font-semibold text-rose">3</p>
-            <p class="font-sans text-xs text-taupe mt-1 tracking-wide">Áreas de atuação</p>
-          </div>
-          <div class="border-l border-blush pl-10">
-            <p class="font-serif text-4xl font-semibold text-rose">OAB</p>
-            <p class="font-sans text-xs text-taupe mt-1 tracking-wide">Regularmente inscrita</p>
-          </div>
-          <div class="border-l border-blush pl-10">
-            <p class="font-serif text-4xl font-semibold text-rose">MG</p>
-            <p class="font-sans text-xs text-taupe mt-1 tracking-wide">Seccional Minas Gerais</p>
-          </div>
+          <p>
+            Por meio do atendimento individual, personalizado e estratégico, busca mitigar riscos voltados à atuação do profissional da saúde, defender os interesses dos pacientes contra planos de saúde e SUS, afastar condenações disciplinares de servidores e agentes públicos, e promover a igualdade nos concursos públicos.
+          </p>
+          <p class="pt-4 border-t border-blush font-serif text-base italic text-taupe">
+            Missão: traduzir a linguagem do Direito em soluções práticas para a vida de cada cliente.
+          </p>
         </div>
       </div>
     </div>
@@ -270,115 +261,67 @@
       <!-- Cards grid -->
       <div class="grid md:grid-cols-3 gap-8">
 
-        <!-- Card 1 – Direito Administrativo -->
+        <!-- Card 1 – Direito Médico e da Saúde -->
         <article class="area-card fade-in bg-warm rounded-2xl p-8 border border-blush/50">
           <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center mb-6">
-            <!-- Icon: building/government -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold text-bark mb-3">Direito Médico e da Saúde</h3>
+          <ul class="space-y-3 font-sans text-sm text-taupe font-light">
+            <li class="flex items-start gap-2">
+              Defesa dos interesses dos profissionais da saúde em processos cíveis e administrativos
+            </li>
+            <li class="flex items-start gap-2">
+              Busca de tratamentos para pacientes em processos judiciais contra planos de saúde e contra o SUS
+            </li>
+          </ul>
+        </article>
+
+        <!-- Card 2 – Direito Administrativo -->
+        <article class="area-card fade-in bg-warm rounded-2xl p-8 border border-blush/50" style="transition-delay: 0.1s">
+          <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10h1v11H4M19 10h1v11h-1M9 10h1v11H9M14 10h1v11h-1"/>
             </svg>
           </div>
           <h3 class="font-serif text-2xl font-semibold text-bark mb-3">Direito Administrativo</h3>
-          <p class="font-sans text-sm text-taupe leading-relaxed font-light mb-5">
-            Rege as relações entre o cidadão e o Estado, assegurando os princípios constitucionais da legalidade, impessoalidade, moralidade, publicidade e eficiência, previstos no art. 37 da Constituição Federal de 1988.
-          </p>
-          <ul class="space-y-2 font-sans text-sm text-taupe font-light">
+          <ul class="space-y-3 font-sans text-sm text-taupe font-light">
             <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Processos administrativos e recursos
+              Defesa de servidores públicos, notários e registradores em processos administrativos disciplinares
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Direito dos servidores públicos
+              Ampla prática no Conselho Nacional de Justiça, nas Corregedorias Extrajudiciais, Conselhos da Magistratura e Órgãos Especiais dos Tribunais de Justiça
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Concursos públicos e PADs
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Licitações e contratos administrativos
+              Proteção de concursandos e da igualdade nos concursos públicos
             </li>
           </ul>
-          <div class="mt-6 pt-6 border-t border-blush/60">
-            <p class="font-sans text-[11px] text-taupe/60 leading-relaxed italic">
-              Fundamento: CF/88, art. 37; Lei 9.784/1999; Lei 8.112/1990.
-            </p>
-          </div>
         </article>
 
-        <!-- Card 2 – Direito do Consumidor -->
-        <article class="area-card fade-in bg-warm rounded-2xl p-8 border border-blush/50" style="transition-delay: 0.1s">
+        <!-- Card 3 – Direito Civil e do Consumidor -->
+        <article class="area-card fade-in bg-warm rounded-2xl p-8 border border-blush/50" style="transition-delay: 0.2s">
           <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center mb-6">
-            <!-- Icon: shield -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 10c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
             </svg>
           </div>
-          <h3 class="font-serif text-2xl font-semibold text-bark mb-3">Direito do Consumidor</h3>
-          <p class="font-sans text-sm text-taupe leading-relaxed font-light mb-5">
-            O Código de Defesa do Consumidor (Lei 8.078/1990) estabelece normas de proteção nas relações de consumo, reconhecendo a vulnerabilidade do consumidor e garantindo seus direitos básicos, como a proteção contra práticas abusivas e publicidade enganosa.
-          </p>
-          <ul class="space-y-2 font-sans text-sm text-taupe font-light">
+          <h3 class="font-serif text-2xl font-semibold text-bark mb-3">Direito Civil e do Consumidor</h3>
+          <ul class="space-y-3 font-sans text-sm text-taupe font-light">
             <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Cobranças indevidas e restituição
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Vícios em produtos e serviços
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Negativação indevida (SPC/SERASA)
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Danos morais e materiais
-            </li>
-          </ul>
-          <div class="mt-6 pt-6 border-t border-blush/60">
-            <p class="font-sans text-[11px] text-taupe/60 leading-relaxed italic">
-              Fundamento: Lei 8.078/1990 – Código de Defesa do Consumidor.
-            </p>
-          </div>
-        </article>
-
-        <!-- Card 3 – Direito Civil -->
-        <article class="area-card fade-in bg-warm rounded-2xl p-8 border border-blush/50" style="transition-delay: 0.2s">
-          <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center mb-6">
-            <!-- Icon: document/balance -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.589-1.202L18.75 4.97zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.589-1.202L5.25 4.97z"/>
-            </svg>
-          </div>
-          <h3 class="font-serif text-2xl font-semibold text-bark mb-3">Direito Civil</h3>
-          <p class="font-sans text-sm text-taupe leading-relaxed font-light mb-5">
-            O Código Civil (Lei 10.406/2002) disciplina as relações entre particulares, compreendendo obrigações, contratos, responsabilidade civil, família e sucessões — pilares fundamentais da vida em sociedade.
-          </p>
-          <ul class="space-y-2 font-sans text-sm text-taupe font-light">
-            <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Contratos e assessoria preventiva
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
               Responsabilidade civil e indenizações
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Família: divórcio, guarda e alimentos
+              Contratos e assessoria preventiva
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-rose mt-0.5">—</span>
-              Inventário e planejamento sucessório
+              Cobranças e negativações indevidas
+            </li>
+            <li class="flex items-start gap-2">
+              Restituição de valores para vítimas de golpes (Pix, falsa central de banco…)
             </li>
           </ul>
-          <div class="mt-6 pt-6 border-t border-blush/60">
-            <p class="font-sans text-[11px] text-taupe/60 leading-relaxed italic">
-              Fundamento: Lei 10.406/2002 – Código Civil Brasileiro.
-            </p>
-          </div>
         </article>
       </div>
     </div>
@@ -432,6 +375,30 @@
           </p>
         </div>
 
+        <div class="fade-in md:col-start-1 md:col-span-1" style="transition-delay: 0.3s">
+          <div class="w-14 h-14 rounded-full bg-blush mx-auto flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-bark mb-2">Conhecimento Interdisciplinar</h3>
+          <p class="font-sans text-sm text-taupe font-light leading-relaxed">
+            Acreditamos que o conhecimento em áreas distintas do Direito nos proporciona uma visão integral, estratégica e atenta aos detalhes de cada caso.
+          </p>
+        </div>
+
+        <div class="fade-in md:col-span-1" style="transition-delay: 0.4s">
+          <div class="w-14 h-14 rounded-full bg-blush mx-auto flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-bark mb-2">Habilidade em Despachos e Sustentações Orais</h3>
+          <p class="font-sans text-sm text-taupe font-light leading-relaxed">
+            A prática em despachos e sustentações orais nos Tribunais de Justiça, Conselhos da Magistratura, Órgãos Especiais e Conselho Nacional de Justiça nos proporcionou desenvoltura profissional, um discurso sintetizado e planejado para cada fase processual.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -440,57 +407,72 @@
        CONTATO
   ═══════════════════════════════════════════ -->
   <section id="contato" class="py-24 px-6">
-    <div class="max-w-4xl mx-auto text-center fade-in">
-      <p class="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-rose mb-4">Contato</p>
-      <h2 class="font-serif text-4xl md:text-5xl font-light text-ink mb-5">
-        Vamos <span class="italic">conversar?</span>
-      </h2>
-      <p class="font-sans text-sm text-taupe font-light leading-relaxed max-w-lg mx-auto mb-14">
-        Entre em contato para agendar uma consulta ou tirar dúvidas. O primeiro passo começa com uma conversa.
-      </p>
-
-      <!-- Contact cards -->
-      <div class="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
-
-        <!-- WhatsApp -->
-        <a href="https://wa.me/5567981023008?text=Olá%2C%20Dra.%20Bruna%21%20Gostaria%20de%20agendar%20uma%20consulta."
-           target="_blank" rel="noopener"
-           class="group flex items-center gap-5 p-6 bg-warm rounded-2xl border border-blush hover:border-rose transition-colors text-left">
-          <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center shrink-0 group-hover:bg-rose/20 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-taupe" viewBox="0 0 24 24">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.122 1.52 5.856L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.032-1.386l-.36-.214-3.76.879.928-3.67-.234-.374A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-            </svg>
-          </div>
-          <div>
-            <p class="font-sans text-[10px] font-semibold tracking-widest uppercase text-rose mb-1">WhatsApp</p>
-            <p class="font-serif text-lg font-medium text-bark">(67) 98102-3008</p>
-          </div>
-        </a>
-
-        <!-- Email -->
-        <a href="mailto:Nogueirabruna.adv@gmail.com"
-           class="group flex items-center gap-5 p-6 bg-warm rounded-2xl border border-blush hover:border-rose transition-colors text-left">
-          <div class="w-12 h-12 rounded-full bg-blush flex items-center justify-center shrink-0 group-hover:bg-rose/20 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
-            </svg>
-          </div>
-          <div>
-            <p class="font-sans text-[10px] font-semibold tracking-widest uppercase text-rose mb-1">E-mail</p>
-            <p class="font-serif text-base font-medium text-bark break-all">Nogueirabruna.adv@gmail.com</p>
-          </div>
-        </a>
+    <div class="max-w-2xl mx-auto fade-in">
+      <div class="text-center mb-12">
+        <p class="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-rose mb-4">Contato</p>
+        <h2 class="font-serif text-4xl md:text-5xl font-light text-ink mb-5">
+          Vamos <span class="italic">conversar?</span>
+        </h2>
+        <p class="font-sans text-sm text-taupe font-light leading-relaxed max-w-lg mx-auto">
+          Entre em contato para agendar um atendimento, tirar suas dúvidas e para que eu possa entender como te ajudar. O primeiro passo começa com uma conversa.
+        </p>
       </div>
 
-      <!-- Big CTA -->
-      <a href="https://wa.me/5567981023008?text=Olá%2C%20Dra.%20Bruna%21%20Gostaria%20de%20agendar%20uma%20consulta."
-         target="_blank" rel="noopener"
-         class="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-rose text-white font-sans text-sm font-medium hover:bg-taupe transition-colors shadow-md">
-        Agendar Consulta pelo WhatsApp
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-        </svg>
-      </a>
+      <!-- Contact form -->
+      <form id="contato-form" class="bg-warm rounded-2xl border border-blush p-8 space-y-6">
+
+        <!-- Name + City -->
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="f-nome" class="block font-sans text-xs font-semibold tracking-widest uppercase text-taupe mb-2">Nome</label>
+            <input id="f-nome" type="text" placeholder="Seu nome completo"
+              class="w-full bg-cream border border-blush rounded-xl px-4 py-3 font-sans text-sm text-ink placeholder-taupe/50 focus:outline-none focus:border-rose transition-colors" />
+          </div>
+          <div>
+            <label for="f-cidade" class="block font-sans text-xs font-semibold tracking-widest uppercase text-taupe mb-2">Cidade</label>
+            <input id="f-cidade" type="text" placeholder="Sua cidade / estado"
+              class="w-full bg-cream border border-blush rounded-xl px-4 py-3 font-sans text-sm text-ink placeholder-taupe/50 focus:outline-none focus:border-rose transition-colors" />
+          </div>
+        </div>
+
+        <!-- Area checkboxes -->
+        <div>
+          <p class="font-sans text-xs font-semibold tracking-widest uppercase text-taupe mb-3">Área de interesse</p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <label class="area-pill flex items-center gap-2 cursor-pointer select-none px-4 py-2.5 rounded-full border border-blush bg-cream font-sans text-sm text-taupe transition-colors hover:border-rose">
+              <input type="checkbox" value="Direito Médico e da Saúde" class="area-check sr-only" />
+              <span class="area-dot w-2 h-2 rounded-full bg-blush shrink-0 transition-colors"></span>
+              Direito Médico e da Saúde
+            </label>
+            <label class="area-pill flex items-center gap-2 cursor-pointer select-none px-4 py-2.5 rounded-full border border-blush bg-cream font-sans text-sm text-taupe transition-colors hover:border-rose">
+              <input type="checkbox" value="Direito Administrativo" class="area-check sr-only" />
+              <span class="area-dot w-2 h-2 rounded-full bg-blush shrink-0 transition-colors"></span>
+              Direito Administrativo
+            </label>
+            <label class="area-pill flex items-center gap-2 cursor-pointer select-none px-4 py-2.5 rounded-full border border-blush bg-cream font-sans text-sm text-taupe transition-colors hover:border-rose">
+              <input type="checkbox" value="Direito Civil e do Consumidor" class="area-check sr-only" />
+              <span class="area-dot w-2 h-2 rounded-full bg-blush shrink-0 transition-colors"></span>
+              Direito Civil e do Consumidor
+            </label>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="f-mensagem" class="block font-sans text-xs font-semibold tracking-widest uppercase text-taupe mb-2">Mensagem</label>
+          <textarea id="f-mensagem" rows="4" placeholder="Descreva brevemente o seu caso ou dúvida…"
+            class="w-full bg-cream border border-blush rounded-xl px-4 py-3 font-sans text-sm text-ink placeholder-taupe/50 focus:outline-none focus:border-rose transition-colors resize-none"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit"
+          class="w-full flex items-center justify-center gap-3 px-10 py-4 rounded-full bg-rose text-white font-sans text-sm font-medium hover:bg-taupe transition-colors shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-white shrink-0" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.122 1.52 5.856L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.032-1.386l-.36-.214-3.76.879.928-3.67-.234-.374A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+          </svg>
+          Agendar atendimento pelo WhatsApp
+        </button>
+      </form>
     </div>
   </section>
 
@@ -548,6 +530,42 @@
       link.addEventListener('click', () => {
         document.getElementById('mobile-menu-toggle').checked = false;
       });
+    });
+
+    // Area pill toggle styling
+    document.querySelectorAll('.area-pill').forEach(pill => {
+      const cb = pill.querySelector('.area-check');
+      const dot = pill.querySelector('.area-dot');
+      cb.addEventListener('change', () => {
+        if (cb.checked) {
+          pill.classList.add('border-rose', 'bg-blush/40', 'text-bark');
+          pill.classList.remove('border-blush', 'bg-cream', 'text-taupe');
+          dot.classList.add('bg-rose');
+          dot.classList.remove('bg-blush');
+        } else {
+          pill.classList.remove('border-rose', 'bg-blush/40', 'text-bark');
+          pill.classList.add('border-blush', 'bg-cream', 'text-taupe');
+          dot.classList.remove('bg-rose');
+          dot.classList.add('bg-blush');
+        }
+      });
+    });
+
+    // Contact form → WhatsApp
+    document.getElementById('contato-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nome     = document.getElementById('f-nome').value.trim();
+      const cidade   = document.getElementById('f-cidade').value.trim();
+      const areas    = [...document.querySelectorAll('.area-check:checked')].map(cb => cb.value);
+      const mensagem = document.getElementById('f-mensagem').value.trim();
+
+      let text = 'Olá, Dra. Bruna! Gostaria de agendar um atendimento.\n\n';
+      if (nome)          text += `*Nome:* ${nome}\n`;
+      if (cidade)        text += `*Cidade:* ${cidade}\n`;
+      if (areas.length)  text += `*Área:* ${areas.join(', ')}\n`;
+      if (mensagem)      text += `\n*Mensagem:*\n${mensagem}`;
+
+      window.open('https://wa.me/5567981023008?text=' + encodeURIComponent(text), '_blank');
     });
   </script>
 </body>
