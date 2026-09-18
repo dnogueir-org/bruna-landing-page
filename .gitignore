@@ -1,0 +1,7 @@
+.vercel
+node_modules
+dist
+.env
+.tina/__generated__
+public/admin
+

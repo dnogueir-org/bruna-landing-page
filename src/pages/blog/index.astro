@@ -1,0 +1,120 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+posts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+---
+<Layout
+  title="Blog | Bruna Nogueira Advocacia"
+  description="Artigos e publicações sobre Direito Médico e da Saúde, Direito Administrativo e Direito Civil."
+>
+
+  <!-- Nav -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-blush">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex flex-col leading-tight">
+        <span class="font-serif text-xl font-semibold tracking-wide text-ink">Bruna Nogueira</span>
+        <span class="font-sans text-[10px] font-medium tracking-widest text-taupe uppercase">Advogada · OAB/MG 233.848</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-sans text-sm font-medium text-taupe">
+        <a href="/#sobre"   class="nav-link hover:text-ink transition-colors">Sobre</a>
+        <a href="/#areas"   class="nav-link hover:text-ink transition-colors">Áreas</a>
+        <a href="/blog"     class="nav-link hover:text-ink transition-colors text-ink">Blog</a>
+        <a href="/#contato" class="nav-link hover:text-ink transition-colors">Contato</a>
+        <a href="/#contato" class="ml-2 px-5 py-2 rounded-full bg-rose text-white text-sm font-medium hover:bg-bark transition-colors">
+          Fale Conosco
+        </a>
+      </nav>
+      <label for="blog-menu-toggle" class="md:hidden cursor-pointer text-taupe" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </label>
+    </div>
+    <input type="checkbox" id="blog-menu-toggle" class="hidden peer" />
+    <nav class="md:hidden max-h-0 overflow-hidden peer-checked:max-h-72 transition-all duration-300 bg-cream border-t border-blush">
+      <div class="flex flex-col px-6 py-4 gap-4 font-sans text-sm font-medium text-taupe">
+        <a href="/#sobre">Sobre</a>
+        <a href="/#areas">Áreas de Atuação</a>
+        <a href="/blog" class="text-ink">Blog</a>
+        <a href="/#contato">Contato</a>
+        <a href="/#contato" class="mt-1 text-center px-5 py-2 rounded-full bg-rose text-white hover:bg-bark transition-colors">Fale Conosco</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Listing -->
+  <main class="bg-cream min-h-screen pt-28 pb-24 px-6">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="text-center mb-16 section-rule">
+        <p class="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-rose mb-3">Publicações</p>
+        <h1 class="font-serif text-4xl md:text-5xl font-light text-ink">
+          Artigos &amp; <span class="italic">Insights</span>
+        </h1>
+      </div>
+
+      {posts.length === 0 ? (
+        <div class="text-center py-20">
+          <p class="font-serif text-2xl font-light text-taupe italic">Em breve, novos artigos.</p>
+        </div>
+      ) : (
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {posts.map(post => (
+            <a href={`/blog/${post.slug}`}
+               class="group flex flex-col bg-warm rounded-2xl border border-blush overflow-hidden hover:border-rose transition-colors area-card">
+              {post.data.heroImage ? (
+                <img src={post.data.heroImage} alt={post.data.title} class="w-full h-52 object-cover" />
+              ) : (
+                <div class="w-full h-52 bg-blush/50 flex items-center justify-center">
+                  <span class="font-serif text-6xl text-rose/20 select-none">"</span>
+                </div>
+              )}
+              <div class="p-6 flex flex-col flex-1">
+                {post.data.category && (
+                  <span class="font-sans text-[10px] font-semibold tracking-widest uppercase text-rose mb-2">
+                    {post.data.category}
+                  </span>
+                )}
+                <h2 class="font-serif text-xl font-semibold text-bark mb-2 group-hover:text-taupe transition-colors leading-snug">
+                  {post.data.title}
+                </h2>
+                <p class="font-sans text-xs text-taupe/70 mb-4">
+                  {new Date(post.data.pubDate).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
+                </p>
+                {post.data.excerpt && (
+                  <p class="font-sans text-sm text-taupe font-light leading-relaxed flex-1 mb-4">
+                    {post.data.excerpt}
+                  </p>
+                )}
+                <span class="font-sans text-xs font-medium text-rose group-hover:underline mt-auto">
+                  Ler artigo →
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-cream/60 py-12 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-center md:text-left">
+        <p class="font-serif text-2xl text-cream font-light">Bruna Nogueira</p>
+        <p class="font-sans text-xs tracking-widest uppercase text-rose mt-1">Advogada · OAB/MG 233.848</p>
+      </div>
+      <div class="text-center font-sans text-xs leading-relaxed">
+        <p><a href="tel:+5567981023008" class="hover:text-cream transition-colors">(67) 98102-3008</a></p>
+        <p><a href="mailto:Nogueirabruna.adv@gmail.com" class="hover:text-cream transition-colors">Nogueirabruna.adv@gmail.com</a></p>
+      </div>
+      <div class="text-center md:text-right font-sans text-xs">
+        <p>© {new Date().getFullYear()} Bruna Nogueira Advocacia.</p>
+        <p class="mt-1 text-cream/40">Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</Layout>
