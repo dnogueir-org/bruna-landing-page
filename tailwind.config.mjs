@@ -6,10 +6,10 @@ export default {
       colors: {
         cream:  '#FAF7F4',
         warm:   '#F4EDE4',
-        blush:  '#E0CFC0',
-        rose:   '#2C1810',
-        taupe:  '#5C3A28',
-        bark:   '#1A0E08',
+        blush:  '#E8D5D8',
+        rose:   '#6B1E2E',
+        taupe:  '#8B4A58',
+        bark:   '#4A1020',
         ink:    '#2D2425',
       },
       fontFamily: {
